@@ -36,7 +36,7 @@ var exports = module.exports = function(defaultConfig, options) {
 
   var prefix = '';
   if (options && options.prefix) {
-      prefix = options.prefix.toUpperCase();
+      prefix = toUnderscore(options.prefix).toUpperCase();
   }
 
   for (var configKey in defaultConfig) {
