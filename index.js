@@ -1,6 +1,6 @@
 
 function toUnderscore(str) {
-	return str.replace(/([A-Z])/g, function($1){return "_"+$1.toLowerCase();});
+	return str.replace(/(ID|URL|[A-Z])/g, function($1){return "_"+$1.toLowerCase();});
 };
 
 
